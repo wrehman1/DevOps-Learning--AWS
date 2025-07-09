@@ -6,9 +6,9 @@ High availability - means that global infrastructure is able to diversify data c
 
 ## AWS Regions
 
-AWS has fault tolerance and has regions. 
+AWS has has Regions all around the world. 
 
-Each region is completely isolated unless you explicitly allow data to be transferred to a different data center, good for security and or compliance. 
+Names can be: us-east-1, eu-west-3 etc. 
 
 Each region has multiple data centers, geographically isolated areas. 
 
@@ -16,9 +16,24 @@ Data centers are connected via high speed fibers.
 
 Factors to consider when choosing regions: ***Compliance***, ***Proximity*** (reduce latency?), ***Feature availability*** and ***Pricing***.
 
-## Edge Locations 
 
-They are responsible for caching copies of darta to be closer to the clients. This is done by **CONTENT DELIVERY NETWORK** (CDN). 
+## AWS Availability Zones (AZs)
+
+AZ is 1 or more data center within a region. 
+
+Region is 3 or more AZ. 
+
+Each region is completely isolated unless you explicitly allow data to be transferred to a different data center, good for security and or compliance. 
+
+AWS has data centers across the world. they are separated from each other so that they are isolated from disasters. 
+
+Regional services are by definition, already highly available. You don't want to run in one region because it needs to be fail proof. 
+
+**BEST PRACTICE** - run across at least 2 AZs in one region. 
+
+## Edge Locations (Points of Presence)
+
+They are responsible for caching copies of data to be closer to the clients. This is done by **CONTENT DELIVERY NETWORK** (CDN). 
 
 Amazon Cloudfront is a CDN. It helps deliver data, videos, API with low latency & high speed. 
 
@@ -26,14 +41,4 @@ Amazon Cloudfront is a CDN. It helps deliver data, videos, API with low latency 
 
 **Amazon Route53** - is a Domain Name Service (DNS) that helps direct and route customers and translates domain names to IP addresses. 
 
-## Availability Zones (AZs)
 
-AZ is 1 or more data center within a region. 
-
-Region is 3 or more AZ. 
-
-AWS has data centers across the world. 
-
-Regional services are by definition, already highly available. You don't want to run in one region because it needs to be fail proof. 
-
-**BEST PRACTICE** - run across at least 2 AZs in one region. 
