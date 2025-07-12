@@ -41,4 +41,24 @@ Amazon Cloudfront is a CDN. It helps deliver data, videos, API with low latency 
 
 **Amazon Route53** - is a Domain Name Service (DNS) that helps direct and route customers and translates domain names to IP addresses. 
 
+## IAM Users
+
+`Users` - Mapped to a physical user, has password for AWS Console. 
+
+`Groups` - Contains users only.
+
+`Policies` - JSON document that outlines permissions for users and groups.
+
+`Roles` - For EC2 instances pr AWS services.
+
+`Security` - MFA + password policy.
+
+`AWS Command Line Interface (CLI) - Manage AWS services using the Command Line.
+
+`AWS SDK` - Manage AWS Services using a programming language. 
+
+`Access Keys` - Access AWS using the CLI or SDK.
+
+`Audit` - IAM Credential Reports & IAM Access Advisor. 
+
 
