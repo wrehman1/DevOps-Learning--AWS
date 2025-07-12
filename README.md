@@ -53,7 +53,7 @@ Amazon Cloudfront is a CDN. It helps deliver data, videos, API with low latency 
 
 `Security` - MFA + password policy.
 
-`AWS Command Line Interface (CLI) - Manage AWS services using the Command Line.
+`AWS Command Line Interface (CLI)` - Manage AWS services using the Command Line.
 
 `AWS SDK` - Manage AWS Services using a programming language. 
 
