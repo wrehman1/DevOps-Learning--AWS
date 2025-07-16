@@ -95,3 +95,7 @@ The EC2 User Data Script runs with the root user.
 
 <img width="795" height="717" alt="image" src="https://github.com/user-attachments/assets/437c185f-b3ea-40e1-b864-1f28978eb384" />
 
+## EC2 Instances Purchasing Options
+
+<img width="808" height="396" alt="image" src="https://github.com/user-attachments/assets/52a0b957-025c-42ae-8651-a331ac42cfaa" />
+
