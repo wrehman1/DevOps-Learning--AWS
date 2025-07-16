@@ -61,4 +61,37 @@ Amazon Cloudfront is a CDN. It helps deliver data, videos, API with low latency 
 
 `Audit` - IAM Credential Reports & IAM Access Advisor. 
 
+## Amazon EC2
+
+EC2 = **Elastic Compute Cloud** = Infrastructure as a Service (IaaS)
+
+EC2 is one of the most *popular* of AWS offering. 
+
+It maining consists in the capability of: 
+
+      • Renting virtual machinine (EC2).
+
+      • Storing data on virtual drives (EBS).
+
+      • Distributing load across machines (ELB).
+
+      • Scaling the services using an auto-scaling group (ASG). 
+
+## EC2 User Data
+
+It is posibble to bootstrap our instances using an EC2 User Data script. Bootstrapping means launching commands when a machine starts. That script is *only run once* at the instance *first start*. EC2 User Data is used to automate boot tasks such as: 
+
+• Installing updates
+
+• Installing softwares
+
+• Downloading common files from the internet
+
+• Anything you can think of
+
+The EC2 User Data Script runs with the root user. 
+
+## EC2 Instance Types
+
+<img width="795" height="717" alt="image" src="https://github.com/user-attachments/assets/437c185f-b3ea-40e1-b864-1f28978eb384" />
 
