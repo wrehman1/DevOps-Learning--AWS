@@ -99,3 +99,80 @@ The EC2 User Data Script runs with the root user.
 
 <img width="808" height="396" alt="image" src="https://github.com/user-attachments/assets/52a0b957-025c-42ae-8651-a331ac42cfaa" />
 
+## Security Groups
+
+Secority Groups are the fundemental of network security in AWS. They control how traffic is allowed in or out of your EC2 Instances. SG's only allow rules. SG rules can reference by IP or by SG.
+
+SGs are acting as a "Firewall" on an EC2 Instance. They regulate: 
+
+      • Access to Ports
+
+      • Authorised IP ranges - IPv4 and IPv6
+
+      • Control of inbound network (from other to the Instance)
+
+      • Control of outbound network (from the Instance to the other)
+
+
+• SG can be attached to multiple Instances. 
+
+• SG can be locked down to a region/VPC combination.
+
+• SG does live "outside" the EC2 - if traffic is blocked, the EC2 Instance won't see it. 
+
+• It is good practice to maintain one separate SG for SSH access. 
+
+• If your application is not accessible (times out), then it's a SG issue. 
+
+• If your application gives a "connection refused" error, then it's an application error or it's not launched.
+
+• All inbound traffic is blocked by default.
+
+• All outbound traffic is authorised by default.
+
+
+## Ports
+
+`22 = SSH (Secure Shell)` - log into a Linux Instance
+
+`21 = FTP (File TRanfer Protocol)` - Upload files into a file share
+
+`22 = SFTP (Secure File Transfer Protocol)` - Upload files using SSH
+
+`80 = HTTP` - Access unsecured websites
+
+`443 = HTTPS` - Access secured websites
+
+`53 = DNS` - For DNS queries and resolving
+
+`3389 = RDP (Remote Desktop Protocol)` - Log into a Windows Instance
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
