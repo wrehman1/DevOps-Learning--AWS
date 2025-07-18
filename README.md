@@ -147,10 +147,16 @@ SGs are acting as a "Firewall" on an EC2 Instance. They regulate:
 
 `3389 = RDP (Remote Desktop Protocol)` - Log into a Windows Instance
 
+## Private vs Public (IPv4) Differences
 
+<img width="441" height="518" alt="image" src="https://github.com/user-attachments/assets/dcdf7370-8567-46b6-8f20-6737b2a162b6" />
 
+## Elastic IPs
 
-
+When you stop an then start an EC2 Instance, it can change its Public IP.
+If you need to have a fixed Public IP for the Instance, you will need an Elastic IP. 
+An Elastic IP is a public IPv4 IP which you own as long as the Instance is not stopped or terminated. 
+An Elastic IP can only be attached to one Instance at a time. 
 
 
 
