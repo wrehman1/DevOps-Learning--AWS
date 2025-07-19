@@ -164,6 +164,7 @@ An Elastic Block Store (EBS) volume is a network drive you can attach to your in
 It Allows your instances to persist data, even after termination. 
 They are bound to a specific availability zone. 
 They act as a network USB stick. 
+Solid State by default. 
 
 ## Amazon Machine Image (AMI)
 
@@ -184,7 +185,9 @@ EC2 Instances can be launched from:
 
 ## Amazon Elastic File System (EFS)
 
-Amazon EFS is a managed Network File System (NFS) that can be mounted on multiple EC" Instances. 
+Amazon EFS is a managed Network File System (NFS) that can be mounted on multiple EC2 Instances at the same time, great for use cases which a large number of servies & resources need access to the same data.
+
+Managed file system - traditionally store on--premises. 
 
 EFS can work with many EC2 Instances across multi AZs. 
 
