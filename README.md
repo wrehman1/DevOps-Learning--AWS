@@ -158,6 +158,66 @@ If you need to have a fixed Public IP for the Instance, you will need an Elastic
 An Elastic IP is a public IPv4 IP which you own as long as the Instance is not stopped or terminated. 
 An Elastic IP can only be attached to one Instance at a time. 
 
+## Elastic Block Store (EBS) Volume
+
+An Elastic Block Store (EBS) volume is a network drive you can attach to your instances while they run. 
+It Allows your instances to persist data, even after termination. 
+They are bound to a specific availability zone. 
+They act as a network USB stick. 
+
+## Amazon Machine Image (AMI)
+
+AMI are a customisation of an EC2 Instance: 
+      • You add your own software, configuration, operating system, monitoring
+
+      • Faster boot / configuration time because all your software is pre-packaged
+
+AMI are built for a specific region (and can be copied across regions)
+
+EC2 Instances can be launched from: 
+
+      • A Public AMI: AWS provided
+
+      • Your own AMI: You can make and maintain them. 
+
+      • An AWS Marketplace AMI: an AMI created by someone else and want to sell it to other users. 
+
+## Amazon Elastic File System (EFS)
+
+Amazon EFS is a managed Network File System (NFS) that can be mounted on multiple EC" Instances. 
+
+EFS can work with many EC2 Instances across multi AZs. 
+
+EFS is scalable, highly availbale but can be very expensive - it is best to use it when an application truely needs shared storage across multiple instances 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
