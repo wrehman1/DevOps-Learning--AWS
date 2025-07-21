@@ -193,12 +193,48 @@ EFS can work with many EC2 Instances across multi AZs.
 
 EFS is scalable, highly availbale but can be very expensive - it is best to use it when an application truely needs shared storage across multiple instances 
 
+## Vertical Scalability
 
+Vertical scalability means ioncreasing the size of the Instance. For example, your application is running on a t2.micro, scaling it veritically would mean to upgrading the instance to a t2.large, same server but more ~RAM, CPU and storage. 
 
+Veritcal scalability is very common for non-distributed systems, such as databases.
 
+RDS, ElastiCache are services that can scale vertically. T
+There usually is a limit to how much you can vertically scale (hardware limit).
 
+## Horizontal Scalability
 
+Horizontal Scalability means increasing the number of instances/systems for your application. 
 
+Hotizontal scaling implies distributing systems. This is very common for aweb applications/modern applications.
+
+It's easy to horizontally scale thanks to the Clolud offerings such as Amazon EC2. 
+
+Horizonrtal scalibility is also known as elastic. If one instance fails. there will be other instances available to handle and continue as a server. 
+
+## High Availability 
+
+• High availability usially goes hand in hand with horizontal scaling.
+
+• HA means running your application/system in at least 2 data centers (== Availability Zones).
+
+• The goal of HA is to survive a data center loss. 
+
+• The HA can be passive (for RDS Multi AZ for example). 
+
+• The HA can be active (for Horizontal Scaling). 
+
+## HA & Scalability for EC2 
+
+• Vertical Scaling: Increase instance size (scale up/down) from t2.nano to u-12tb1.metal
+
+• Horizontal Scaling: Increase number of instances (scale out/in)
+
+      Use: Auto Scaling Group and Load Balancerto help with scaling.
+
+• High Availability: Run instances for the same applications across multi-AZ 
+
+      Use: Auto Scaling Group multi-AZ nad load Balancer multi-AZ to make sure app is running smootly. 
 
 
 
