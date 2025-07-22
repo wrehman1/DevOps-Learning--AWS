@@ -236,11 +236,46 @@ Horizonrtal scalibility is also known as elastic. If one instance fails. there w
 
       Use: Auto Scaling Group multi-AZ nad load Balancer multi-AZ to make sure app is running smootly. 
 
+## Load Balancer (LB)
 
+Loand balancers are servers that forward traffic to multiple servers (e.g. EC2 instances) downstream. 
 
+In AWS, ELB sits between users and EC2 instances. When traffic comes in, it forwards the traffic to EC2 downstream. It is constantly checking which instances are healthy and direct the traffic to the ones that can handle it. 
+This process keepsthe application available and responsive, even if one more instances fail. 
 
+Revers eproxies are same as LB but with extra functionality. It also sits between users and servers handling requests but it can do more than just traffic 
 
+Load balancers constantly check the health of EC2 instances. Load balancers not just handle traffic, but manage failover, security and ensures high availability across multiple AZs. 
 
+## Why use Elastic Load Balancer (ELB)?
+
+An Elastic Load Balancer is a mangaed load balancer:
+
+      • AWS guarantees that it will be working.
+
+      • AWS takes care of upgrades, maintenance, high availability.
+
+      • AWS provides only a few configuration knobs.
+
+It costs less to setup your own load balancer but it will be a lot more effore on your end. 
+
+ELB is integrated with many AWS offerings/services:
+
+      • EC2, Ec2 Auto Scaling Groups, Amazon ECS
+
+      • AWS Certificate Manager (ACM), CloudWatch
+
+      • Route53, AWS WAF, AWS Global Accelerator
+
+## Health Checks
+
+Health Checks are crucial for Load Balancers.
+
+They enable the load balancer to know if instances it forwards the traffic to are available to reply to requests. 
+
+Health Cheks are done on a port and a route (/health is common)
+
+If the response is not 200 (OK), then the instance is unhealthy. 
 
 
 
