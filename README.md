@@ -277,7 +277,35 @@ Health Cheks are done on a port and a route (/health is common)
 
 If the response is not 200 (OK), then the instance is unhealthy. 
 
+## Application Load Balancer (ALB)
 
+• Application Load Balancers is Layer 7 (HTTP).
+
+• It has the ability to load balanced traffic to multiple HTTP applications running across different machines all within  target groups, e.g EC2 instances, Lambda functions and even containers.
+
+• Load balancing to multiple applications on the same machine ex containers. 
+
+• Support for HTTP/2 and WebSocket.
+
+• Supports redirects (e.g. from HTTP to HTTPS) - better performance and more connections. 
+
+• Routing tables to different target groups.
+
+• Routing based on path in URL and hostname in URL. 
+
+• ALB are a great fit for micro services & container-based application (E>G> Docker & Amazon ECS).
+
+• Has a port mapping feature to redirect to a dynamic port in ECS. 
+
+• ALBs uses health checks to ensure the instances in each group are running and able to handle traffic. If health check fails - meaning an instance is not responding or is in trouble, the ALB will stop sending traffic to that instance and instead route request to other instances in the group.
+
+• ALB is built for HTTP and HTTPS traffic, meaning it can handle a wide range of web-based services.
+
+• ALB will examine each request and looks at where to send the traffic based on the path host or other writing that have setup. 
+
+• A search request would be requested to a separate target group focused on search related functionality 
+
+• by using different and target groups, you can ensure that one service doesn't interfere with the other, allowing your application to scale and perform better. 
 
 
 
