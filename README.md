@@ -307,14 +307,57 @@ If the response is not 200 (OK), then the instance is unhealthy.
 
 • by using different and target groups, you can ensure that one service doesn't interfere with the other, allowing your application to scale and perform better. 
 
+## Network Load Balancer (NLB)
 
+These are optimised for handling extreme performance and high traffic with low latency. 
 
+Network load balancers (operate at Layer 4 - Transport Layer of OSI model) and allow to: 
 
+      • Forward TCP and UDP traffic to your instances 
 
+      • Handle millions of request per seconds
 
+      • Less latency ~ 100ms (vs 400ms for ALB)
 
+NLB has one static IP per AZ and supports assigining Elastic IP (helpful for whitelisting specific IP)
 
+NLB are used for extreme performance, TCP or UDP traffic. 
 
+Not included in the AWS free tier. 
+
+NLB focuses on speed and efficiency at layer 4 - making it perfect for handling millions of requests with minimal latency. By fowarding TCP directly, it lets you handle large amounts of data quickly which make it ideal for applications with high demands for performanc and scalability. 
+
+## Sticky Sessions (Session Affinity)
+
+• Sticky sessions ensure that the client is always routed to the same instance behind a load balancer. 
+
+• This works for Classic Load Balancer, Application Load Balancer and Network Load Balancer. 
+
+• For CLB and ALB, the "cookie" used for stickiness has an expiration date you control. 
+
+• Sticky sessions should be used when an application stores session data 
+
+• Enabling Stickiness may bring imbalance to the load over the banckend EC2 instances. 
+
+• Only use sticky sessions when user session data isn't shared across multiple instances. 
+
+• If your handling critical session data that needs to stay with one server, it is good to use sticky sessions. Hoever, if load balance and efficiency is more important & you haven't got data to maintain in one place, it may best to think about before enabling it. 
+
+## SSL/TLS Basics 
+
+These are crucial when dealing with security in the onternet, especially for load balancers that handle traffic between clients and server. 
+
+• An SSL Certificate allows traffic between your client's and your load balancer to be encrypted in transit (often called in-flight encryption). This means that data is scrambled as it travels over the internet, preventing from anyone snooping on it.  
+
+      • SSL refers to Secure Sockets Layer, used to encrypt connections. 
+
+      • TLS refers to Transport Layer Security, which is a newer version. This is the modern version of SSL.
+
+• Nowadays, TLS certificates are mainly used, but people still refer as SSL. 
+
+• Public SSL certificates are issued by Certificate Authorities (CA). Examples are: Comodo, Symantec, GoDaddy, GlobalSign, Digicert, Letsencrypt (more popular) etc. 
+
+• SSL certificates have an expiration date (set by yourself) and must be renewed after 1, 2 or even 10 years. 
 
 
 
