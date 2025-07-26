@@ -359,13 +359,51 @@ These are crucial when dealing with security in the onternet, especially for loa
 
 • SSL certificates have an expiration date (set by yourself) and must be renewed after 1, 2 or even 10 years. 
 
+## Load Balancers - SSL Certificates 
 
+• The load balancer uses an X.509 certificate (SSL/TLS server certificate)
 
+• Certificates are managed by using AWS Certificate Manager (ACM) or certificates can be uploaded manually. 
 
+HTTPS listener: 
 
+      • Specify a default certicate 
 
+      • List of certs to support multiple domains can be added optionally. 
 
+      • Clients can use Server Nane Indication (SNI) to specify the hostname they reach
 
+      • Ability to specify a security policy to support older versions of SSL/TLS (legacy clients).
+
+## SSL - Server Name Indiciation (SNI)
+
+• SNI solves the problem of loading multiple SSL certificates ontpo web servers (to serve multiple websites).
+
+• Newer protocol so requires the client to indicate the hostname of the target server in the initial SSL handshake. 
+
+• Server will find the correct certificate or it will return thew default one. 
+
+NOTE: Only works for ALB & NLB (new gen) / CloudFront. 
+
+## Elastic Load Balancer - SSL
+
+Classic Load Balancer (v1):
+
+      • Supports only one SSL cert.
+
+      • Must use CLB for multiple hostname with multiple SSL certs. 
+
+Application Load Balancer (v2):
+
+      • Supports multiple listener with multiple SSL certs
+
+      • Uses server name indication (SNI) to make it work
+
+Network Load Balancer (v2):
+
+      • Supports multiple listener with multiple SSL certs
+
+      •  Uses server name indication (SNI) to make it work
 
 
 
