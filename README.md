@@ -405,7 +405,43 @@ Network Load Balancer (v2):
 
       •  Uses server name indication (SNI) to make it work
 
+## Connection Draining 
 
+On AWS, this is known as Deregistration Delay. 
+
+• Feature Naming: 
+
+      - Connection Sraining - for CLB
+
+      - Deregistration Delay - for ALB & NLB
+
+• Time to complete in-flight requests while the instance is re-registered or unhealthy. 
+
+• Stops sending new requests to the EC2 instance which is de-registering.
+
+• Between 1 to 3600 secs (default: 300 secs)
+
+• Can be disabled (set value to 0)
+
+• Set a low value if reqs are short. 
+
+## Auto Scaling Groups (ASG)
+
+Load on websites and apps can changes drastically. In the Cloud, servers can be created and removed very fast. 
+
+The goal of ASG is to: 
+
+      • Scale out (add EC2 instances) to match an increased load. 
+
+      • Scale in (remove EC2 instances) to match a decreased load. 
+
+      • Ensure  a min amd max number of EC2 instances running. 
+
+      • Auto register new instances to a load balancer. 
+
+      • Recreate an EC2 instance in case old is terminated or is unhealthy.
+
+      • ASG is free, only pay for EC2 they manage. 
 
 
 
