@@ -443,10 +443,43 @@ The goal of ASG is to:
 
       • ASG is free, only pay for EC2 they manage. 
 
+## Auto Scaling Groups in AWS
 
+ASG operates based on 3 things: Minimum capacity, Desired capacity and Maximum capacity. 
 
+Minumum capacity - the least number of EC2 instances that are running, even during low traffic times. 
 
+Desired capacity - target number of instances for normal load. ASG will try and maintain this number unless something changes.
 
+Maximum capacity - Most number of EC2 instances that the ASG is allowed to scale up during high traffic periods. 
+
+## ASG in AWS with Load Balancer
+
+<img width="656" height="334" alt="image" src="https://github.com/user-attachments/assets/8b3f2bfe-52cc-4ff4-a2d1-72fa7b9fca82" />
+
+• The ALB works as the distributor of the incoming traffic to the EC2 instances. It spreads the load so no EC2 instance gets overwhelmed. The ALB checks the health of the EC2 instances, if one does go down, it stops sending traffic to it. 
+
+• The regional health checks - Check for unhealthy or faulty EC2 instances and route traffic from the faulty one until its back online or replaced by the ASG. 
+
+• ASG automatically adjusts the number of the EC2 instances to match the current load. E.g when a website experiences heavy traffic on a sales day, the ASG will scale out. When traffic decreases, the ASG will scale in to reduce the number of instances to save costs. 
+
+## Auto Scaling - CloudWatch Alarms & Scaling
+
+• It is possible to scale an ASG based on CloudWAtch alarms.
+
+• An alarm monitors a metric (such as Average CPU, or a custom metric).
+
+• Metrics like Average CPU are computed for the overall ASG instances. 
+
+• Based on the alarm: 
+
+      - We can create scale OUT policies (increase number of instances)
+
+      - We can create scale IN policies (decrease number of instances)
+
+## ASG - Scaling Policies 
+
+<img width="536" height="239" alt="image" src="https://github.com/user-attachments/assets/3a97022e-28b1-43a6-98d8-667e818f28be" />
 
 
 
