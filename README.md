@@ -481,6 +481,50 @@ Maximum capacity - Most number of EC2 instances that the ASG is allowed to scale
 
 <img width="536" height="239" alt="image" src="https://github.com/user-attachments/assets/3a97022e-28b1-43a6-98d8-667e818f28be" />
 
+## Container related Services on AWS 
+
+• Elastic Container Service (ECS): Is an AWS managed container service. 
+
+• Elastic Kubernetes Services (EKS): Is an AWS managed Kubernetes service.
+
+• AWS Fargate: Serverless containers abstracting away infrastructure manaagement. 
+
+• Amazon Elastic Container Repository (ECR): Is an AWS Docker image storage & management service, AWs version of DockerHub. 
+
+## Amazon ECS 
+
+EC2 Launch Type:
+
+<img width="626" height="331" alt="image" src="https://github.com/user-attachments/assets/0c47ae9c-3f9d-43e0-8089-e65f0395c523" />
+
+Fargate Launch Type: 
+
+<img width="646" height="247" alt="image" src="https://github.com/user-attachments/assets/fb330458-e37f-4c0c-9d97-8233b08e3412" />
+
+IAM Roles for ECS: 
+
+<img width="673" height="314" alt="image" src="https://github.com/user-attachments/assets/1843890a-a1ee-4232-a160-6e24b883dc5e" />
+
+Load Balancer Integrations:
+
+<img width="660" height="316" alt="image" src="https://github.com/user-attachments/assets/9b8c8976-1199-4ec3-98a8-4eb02b224c7c" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
