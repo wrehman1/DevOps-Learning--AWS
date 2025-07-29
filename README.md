@@ -511,6 +511,7 @@ IAM Roles for ECS:
 <img width="673" height="314" alt="image" src="https://github.com/user-attachments/assets/1843890a-a1ee-4232-a160-6e24b883dc5e" />
 
 
+
 Load Balancer Integrations:
 
 
