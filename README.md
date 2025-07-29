@@ -493,19 +493,26 @@ Maximum capacity - Most number of EC2 instances that the ASG is allowed to scale
 
 ## Amazon ECS 
 
+
 EC2 Launch Type:
 
 <img width="626" height="331" alt="image" src="https://github.com/user-attachments/assets/0c47ae9c-3f9d-43e0-8089-e65f0395c523" />
 
+
 Fargate Launch Type: 
+
 
 <img width="646" height="247" alt="image" src="https://github.com/user-attachments/assets/fb330458-e37f-4c0c-9d97-8233b08e3412" />
 
+
 IAM Roles for ECS: 
+
 
 <img width="673" height="314" alt="image" src="https://github.com/user-attachments/assets/1843890a-a1ee-4232-a160-6e24b883dc5e" />
 
+
 Load Balancer Integrations:
+
 
 <img width="660" height="316" alt="image" src="https://github.com/user-attachments/assets/9b8c8976-1199-4ec3-98a8-4eb02b224c7c" />
 
