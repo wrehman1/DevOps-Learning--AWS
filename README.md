@@ -518,17 +518,89 @@ Load Balancer Integrations:
 <img width="660" height="316" alt="image" src="https://github.com/user-attachments/assets/9b8c8976-1199-4ec3-98a8-4eb02b224c7c" />
 
 
+## ECS Service Auto SCaling 
 
+• Automatgically increase/decrease number of ECs tasks.
 
+• Amazon ECS Auto Scaling uses AWS Application Auto Scaling. 
 
+• **Target Tracking** - Scale based on target value for a specific CloudWatch metric
 
+• **Step Scaling** - Scale based on specified CloudWatch Alarm. 
 
+• **Scheduling Scaling** - Scale based on a specified date/time (predictable changes).
 
+• ECS Service Auto Scaling (task level) = EC2 Auto Scaling (EC2 instance level)
 
+• Fargate Auto Scaling is much easier to setup (because it is Serverless)
 
+ECS Auto scaling ensures that services can handle spikes without any problems and spikes down when traffic is low.  
 
+## Amazon ECR - Elastic Container Registry
 
+• ECR stores and manages Docker images on AWS. 
 
+• Private and Public repo (Amazon ECR Public Gallery)
+
+• Fully integrated with ECS, backed by Amazon S3. 
+
+• Access is controlled through IAM permissions ( any errors - check permissions).
+
+• Supports image vulnerability s canning, versioning image tags, image lifestyles. 
+
+## Amazon EKS - Elastic Kubernetes Service
+
+• Enables user to launch *managed Kubernetes clusters* on AWS 
+
+• Kubernetes - an *open-source system* for automatic deployment, scaling and management of containerised (usually Docker) app. 
+
+• Its an alternative to ECS - similar goal but different API.
+
+• EKS supports EC2 if worker nodes need to be deployed or Fargate to deploy serverless containers. 
+
+• Case study: If a company is already using Kubernetes on-prem or in another cloud and wishes to migrate to AWS using Kubernetes. 
+
+• **Kubernetes is cloud-agnostic** (can be used in any cloud - Azure, GCP etc). 
+
+• For multiple regions, deploy one EKS cluster per region. 
+
+•Collect logs and metrics using **CloudWatch Container Insights**
+
+<img width="728" height="355" alt="image" src="https://github.com/user-attachments/assets/ddf08fc3-ce27-43d4-9ed5-8a2cd8ff0b0a" />
+
+• EKS nodes - These are EC2 instances where containers and pods actually run. 
+
+• ELB - Directs user traffic to the nodes and distributes evenyly. 
+
+• Nat Gateway (NGW) - Allow nodes to pull updates/images from internet without exposing them directly to the public traffic. 
+
+• Private Subnets - Keep everything secure and isolated and are spread across multiple AZs, ensuring app is always available.
+
+## Amazon EKS - Node Types 
+
+• Managed Node Groups
+
+      - AWS creates and manages nodes (EC2 instances) for you.
+
+      - Nodes are part of an ASG Managed by EKS - automatically adjust the amount of nodes needed. 
+
+      - Supports On-Demand or Spot Instances
+
+• Self-Managed Nodes
+
+      - Nodes created by user and registered to the EKS cluster and managed by an ASG.
+
+      - You can prebuilt AMI - Aamzon EKS optimised AMI (Amazon Machine Image). 
+
+      - Supports On-Demand or Spot Instances 
+
+• AWS Fargate 
+
+      - No maintenance needed - no nodes managed.
+
+      - Just define CPU and memory requirments for containers, AWS Fargate takes care of everything
+
+      - Easy to manage, but can be expensive 
 
 
 
