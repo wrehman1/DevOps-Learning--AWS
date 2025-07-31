@@ -604,7 +604,21 @@ ECS Auto scaling ensures that services can handle spikes without any problems an
 
 
 
+## Serverless 
 
+<img width="592" height="240" alt="image" src="https://github.com/user-attachments/assets/25abd8c9-377f-41d5-8c2e-76eaf14d7e6c" />
+
+## Serverless in AWS 
+
+<img width="561" height="330" alt="image" src="https://github.com/user-attachments/assets/94510ff6-4350-4aa6-803c-4b4f582c5b4f" />
+
+## EC2 vs Lambda
+
+<img width="551" height="244" alt="image" src="https://github.com/user-attachments/assets/feb91605-f51c-46cd-ae1a-b412767312ee" />
+
+## AWS Lambda Language Support
+
+<img width="551" height="253" alt="image" src="https://github.com/user-attachments/assets/d4468b5d-204c-421e-aea0-8e9c573f7519" />
 
 
 
