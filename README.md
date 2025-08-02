@@ -633,11 +633,33 @@ CIDR (IPv4) - Classless Inter-Domain Routing:
 
 <img width="701" height="298" alt="image" src="https://github.com/user-attachments/assets/8b32d0ca-4dbf-477b-b0ff-aeb109254015" />
 
+## Subnet (IPv4)
+
+<img width="815" height="388" alt="image" src="https://github.com/user-attachments/assets/4629b460-da54-40f8-98fa-bfcdf961b6e4" />
+
+## Internet Gateway (IGW)
+
+<img width="561" height="248" alt="image" src="https://github.com/user-attachments/assets/2f192eec-d3c7-43fd-8a21-acddbe0915ba" />
+
+## Bastion Hosts
+
+<img width="840" height="424" alt="image" src="https://github.com/user-attachments/assets/5ce1c569-c8d6-41cc-a3b7-498128615af2" />
 
 
+## NAT Gateway
 
+NAT Gateway is a powerful tool for allowing private subnets to reach the internet without exposing directly. 
 
+<img width="823" height="278" alt="image" src="https://github.com/user-attachments/assets/42ca69e9-706d-44ef-9f5c-95d1d47280d6" />
 
+<img width="861" height="469" alt="image" src="https://github.com/user-attachments/assets/9f4a201f-a71d-48b5-a52f-e94e5e782b04" />
 
+## NAT Gateway VS NAT Instance 
+
+<img width="851" height="358" alt="image" src="https://github.com/user-attachments/assets/bd6e6aa4-f845-457c-acd1-ef77fb102501" />
+
+## Network Access Control List (NACL)
+
+<img width="827" height="389" alt="image" src="https://github.com/user-attachments/assets/15fbbff1-f68d-4517-8ab3-f3b8a3b568e5" />
 
       
