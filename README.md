@@ -621,8 +621,17 @@ ECS Auto scaling ensures that services can handle spikes without any problems an
 <img width="551" height="253" alt="image" src="https://github.com/user-attachments/assets/d4468b5d-204c-421e-aea0-8e9c573f7519" />
 
 
+## AWS Networking 
 
+CIDR (IPv4) - Classless Inter-Domain Routing:
 
+• Way of allotcating IP addresses. 
+
+• Help define IP ranges. 
+
+## Subnet Masks 
+
+<img width="701" height="298" alt="image" src="https://github.com/user-attachments/assets/8b32d0ca-4dbf-477b-b0ff-aeb109254015" />
 
 
 
