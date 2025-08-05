@@ -663,3 +663,6 @@ NAT Gateway is a powerful tool for allowing private subnets to reach the interne
 <img width="827" height="389" alt="image" src="https://github.com/user-attachments/assets/15fbbff1-f68d-4517-8ab3-f3b8a3b568e5" />
 
       
+## VPC Summary 
+
+<img width="600" height="273" alt="image" src="https://github.com/user-attachments/assets/ec7ae8b0-2414-47cf-ac59-871f55557d3a" />
