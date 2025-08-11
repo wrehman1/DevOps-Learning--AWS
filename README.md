@@ -668,3 +668,10 @@ NAT Gateway is a powerful tool for allowing private subnets to reach the interne
 <img width="600" height="273" alt="image" src="https://github.com/user-attachments/assets/ec7ae8b0-2414-47cf-ac59-871f55557d3a" />
 
 <img width="593" height="273" alt="image" src="https://github.com/user-attachments/assets/33aa00fe-5e82-4e74-a07a-106afd8ceb76" />
+
+
+## AWS Assignment 1
+
+<img width="678" height="533" alt="image" src="https://github.com/user-attachments/assets/6fb5afd5-0c31-4ee8-b0f8-011cc1f380bb" />
+
+<img width="1408" height="261" alt="image" src="https://github.com/user-attachments/assets/58ed4e53-1ca6-4750-8231-ae0a7ec7a5b0" />
