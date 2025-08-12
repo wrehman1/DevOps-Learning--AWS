@@ -670,8 +670,56 @@ NAT Gateway is a powerful tool for allowing private subnets to reach the interne
 <img width="593" height="273" alt="image" src="https://github.com/user-attachments/assets/33aa00fe-5e82-4e74-a07a-106afd8ceb76" />
 
 
-## AWS Assignment 1
+## AWS Assignment Part 1
+
+Objective: 
+
+Create a custom VPC with both public and private subnets, configure internet access, and deploy EC2 instances with secure segmentation.
 
 <img width="678" height="533" alt="image" src="https://github.com/user-attachments/assets/6fb5afd5-0c31-4ee8-b0f8-011cc1f380bb" />
 
 <img width="1408" height="261" alt="image" src="https://github.com/user-attachments/assets/58ed4e53-1ca6-4750-8231-ae0a7ec7a5b0" />
+
+## AWS Assignment Part 2 - Application Load Balancer
+
+Objective: 
+
+Deploy an Application Load Balancer (ALB) with two EC2 instances behind it. Ensure security group (SG) configurations allow only ALB access to EC2 instances while preventing direct access. 
+
+
+<img width="649" height="95" alt="image" src="https://github.com/user-attachments/assets/5009404c-5a33-49cc-932f-cca6437c56dc" />
+
+<img width="915" height="190" alt="image" src="https://github.com/user-attachments/assets/b2668c7f-335b-4de4-8bad-e32415e5b696" />
+
+<img width="907" height="197" alt="image" src="https://github.com/user-attachments/assets/733fa1b8-4052-4faf-b0ff-3b609b41f5b8" />
+
+<img width="1453" height="321" alt="image" src="https://github.com/user-attachments/assets/1e940814-790b-4460-b2b7-21f93a1b148e" />
+
+<img width="674" height="511" alt="image" src="https://github.com/user-attachments/assets/33c56bc9-da3d-4769-892c-0d46854cc943" />
+
+<img width="906" height="187" alt="image" src="https://github.com/user-attachments/assets/e1dd6663-1f1e-47bf-8923-bc5bfcaee98e" />
+
+<img width="907" height="174" alt="image" src="https://github.com/user-attachments/assets/52caa6e7-f3bc-4823-b63b-fd54e45cdfd7" />
+
+<img width="745" height="239" alt="image" src="https://github.com/user-attachments/assets/ffb6c6d9-dba3-4bea-a77e-a2de5cac22f3" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
